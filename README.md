@@ -5,3 +5,5 @@
 
 
 curl -X POST http://<target>/classified -H "Content-Type: application/json" -d '{"username":"HTBAdmin","password":"lmAexomOs13SfqzU8"}'
+
+fetch('/classified', {method:'POST', headers:{'Content-Type':'application/json'}, body:JSON.stringify({username:'HTBAdmin',password:'lmAexomOs13SfqzU8'})}).then(r=>r.json()).then(console.log)
